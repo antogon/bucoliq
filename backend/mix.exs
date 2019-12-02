@@ -20,7 +20,7 @@ defmodule Bucoliq.MixProject do
   def application do
     [
       mod: {Bucoliq.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :scrivener_ecto]
     ]
   end
 
@@ -42,7 +42,8 @@ defmodule Bucoliq.MixProject do
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:scrivener_ecto, "~> 2.0"}
     ]
   end
 

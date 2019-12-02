@@ -23,5 +23,6 @@ defmodule BucoliqWeb.Router do
     pipe_through :api
 
     get "/status", StatusController, :index
+    resources "/trips", TripController, except: [:new, :edit]
   end
 end
